@@ -1,17 +1,19 @@
 package DAO;
 
-public class Label 
+public class Label 	//评价标签实体属性
 {
 	private int LABELNO;
 	private String UNO;
 	private String MNO;
 	private String LABELCONTENT;
 	
+	
+	
 	public int getLabelno() 
 	{
 		return LABELNO;
 	}
-	public void setLabelno()
+	public void setLabelno(int LABELNO)
 	{
 		this.LABELNO=LABELNO;
 	}
@@ -20,7 +22,7 @@ public class Label
 	{
 		return UNO;
 	}
-	public void setUno()
+	public void setUno(String UNO)
 	{
 		this.UNO=UNO;
 	}
@@ -29,7 +31,7 @@ public class Label
 	{
 		return MNO;
 	}
-	public void setMno()
+	public void setMno(String MNO)
 	{
 		this.MNO=MNO;
 	}
@@ -38,7 +40,7 @@ public class Label
 	{
 		return LABELCONTENT;
 	}
-	public void setLabelcontent()
+	public void setLabelcontent(String LABELCONTENT)
 	{
 		this.LABELCONTENT=LABELCONTENT;
 	}
