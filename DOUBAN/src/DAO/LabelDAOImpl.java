@@ -8,13 +8,13 @@ import java.sql.SQLException;
 public class LabelDAOImpl extends DAOBase implements LabelDAO	//评价标签 功能函数 实现
 {
 	//插入
-	private static final String createsql="INSERT INTO LABEL VALUES(?,?,?,?)";
 	public void insertLabel(Label label)
 	{
 		Connection conn=null;
 		PreparedStatement pstm=null;
 		try {
 			conn=getConnection();
+			final String createsql="INSERT INTO LABEL VALUES(?,?,?,?)";
 			pstm=conn.prepareStatement(createsql);
 			
 			pstm.setInt(1,label.getLabelno());
