@@ -59,8 +59,17 @@ public class test
 			
 			break;
 		case 3:
+			System.out.println("请输入要删除的标签ID：");
+			int labelno2=read.nextInt();
+			
+			DAOFactory.getLabelDAO().deleteLabel(labelno2);
+			
 			break;
 		case 4:
+			
+			System.out.println("请输入要查询的标签ID：");
+			
+			
 			break;
 		default:
 			System.out.println("输入错误！");
